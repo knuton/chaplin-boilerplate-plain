@@ -1,11 +1,11 @@
 define([
-  'controllers/base/controller',
+  'controllers/header-and-footer-controller',
   'models/hello-world',
   'views/hello-world-view'
-], function(Controller, HelloWorld, HelloWorldView) {
+], function(HeaderAndFooterController, HelloWorld, HelloWorldView) {
   'use strict';
 
-  var HelloWorldController = Controller.extend({
+  var HelloWorldController = HeaderAndFooterController.extend({
     show: function(params) {
       this.model = new HelloWorld();
       this.view = new HelloWorldView({
